@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+   
+        <div class="player">
+            <audio id="audioPlayer" controls></audio>
+            <div class="controls">
+                <button onclick="prevSong()">Previous</button>
+                <button onclick="togglePlayPause()">Play/Pause</button>
+                <button onclick="nextSong()">Next</button>
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value)">
+            </div>
+            <div class="song-list">
+                <button id="dropdownButton" onclick="toggleDropdown()">Songs List</button>
+                <ul id="songList" class="dropdown-content"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+   
+
+</body>
+</html>
