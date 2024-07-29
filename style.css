@@ -120,6 +120,7 @@ audio::-webkit-media-controls-panel {
     border-radius: 10px;
     max-height: 200px;
     overflow-y: auto;
+    
 }
 
 .dropdown-content li {
@@ -134,7 +135,8 @@ audio::-webkit-media-controls-panel {
 }
 
 .dropdown-content li:hover {
-    background-color: #444;
+    background-color: #fff;
+    color: #121212;
 }
 
 .show {
