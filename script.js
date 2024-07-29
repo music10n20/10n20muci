@@ -73,6 +73,7 @@ function togglePlayPause() {
     } else {
         audioPlayer.pause();
     }
+   
 }
 
 function nextSong() {
@@ -92,3 +93,12 @@ function toggleDropdown() {
     songList.classList.toggle('show');
 }
 window.onload = loadSongs;
+
+
+function playSong(index) {
+    currentSongIndex = index;
+    audioPlayer.src = songs[index].src;
+    document.getElementById('currentSongTitle').textContent = songs[index].title; // Update song title display
+    audioPlayer.play();
+   
+}
