@@ -39,6 +39,7 @@ const songs = [
     { title: "delhi bellyu", src: "song38.mp3" },
     { title: "Show me the meaning ", src: "song39.mp3" },
     { title: "Song 40", src: "song40.mp3" },
+    { title: "chitta ve", src: "song41.mp3" },
 ];
 let currentSongIndex = 0;
 const audioPlayer = document.getElementById('audioPlayer');

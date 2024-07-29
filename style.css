@@ -6,9 +6,11 @@ html, body {
     padding: 0;
 }
 
+
+
 body {
     font-family: 'Lato', sans-serif !important;
-    background-color: #121212;
+
     color: #fff;
     text-align: center;
     display: flex;
@@ -30,12 +32,38 @@ h1 {
     color: #7D30FA;
     margin-bottom: 20px;
 }
+.audiocard {
+    width: 100%; /* Full width of the container */
+    max-width: 700px; /* Maximum width to prevent it from getting too large on large screens */
+    height: auto; /* Adjust height automatically based on content */
+    margin: 1rem auto; /* Top and bottom margin, centered in the container */
+}
+@media (max-width: 480px) {
+    .audiocard {
+        height: auto; /* Adjust height if necessary */
+        margin: 0.5rem auto; /* Smaller margins on very small devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .audiocard {
+        width: 90%; /* Adjust the width for tablets and small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .audiocard {
+        width: 100%; /* Full width for mobile devices */
+        height: auto; /* Adjust height for mobile, if necessary */
+    }
+}
+
 .audiocard{
-    /* filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); */
+  
     width: 700px;
     height: 50px;
     margin-bottom: 25px;
-    margin-top: 25px;
+    margin-top: 15px;
    
 }
 audio::-webkit-media-controls-current-time-display {
@@ -116,7 +144,7 @@ audio::-webkit-media-controls-panel {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #7e6f6f;
+    /* background-color: #7e6f6f; */
     border-radius: 10px;
     max-height: 200px;
     overflow-y: auto;
@@ -124,7 +152,12 @@ audio::-webkit-media-controls-panel {
 }
 
 .dropdown-content li {
-    background-color: #333;
+    /* background-color: #333; */
+    backdrop-filter: blur(19px) saturate(180%);
+    -webkit-backdrop-filter: blur(19px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
@@ -135,8 +168,8 @@ audio::-webkit-media-controls-panel {
 }
 
 .dropdown-content li:hover {
-    background-color: #fff;
-    color: #121212;
+    background-color: #7D30FA;
+    /* color: ; */
 }
 
 .show {
@@ -157,7 +190,26 @@ audio::-webkit-media-controls-panel {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px; /* Adjust spacing */
-    font-size: 50px;
+    margin-bottom: 5px; /* Adjust spacing */
+    font-size: 20px;
 }
 
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #fff; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(28, 216, 230); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #03b3b3;}
