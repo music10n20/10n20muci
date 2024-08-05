@@ -156,6 +156,9 @@ const songs = [
     { title: "ghum shum ghum shum", src: "song155.mp3" }, 
     { title: "Ijazat", src: "song156.mp3" }, 
     { title: "Let The Music Play (Original Vocal Mix)", src: "song157.mp3" }, 
+    { title: "blinding lights", src: "song158.mp3" }, 
+    { title: "mera dil wich", src: "song159.mp3" }, 
+    { title: "sun flower", src: "song160.mp3" }, 
    
    
    
