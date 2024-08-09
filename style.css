@@ -17,7 +17,7 @@ body {
     justify-content: center;
     
     align-items: center;
-    /* background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%); */
+
     background-image:  radial-gradient(  rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
 }
 
@@ -32,31 +32,8 @@ h1 {
     color: #7D30FA;
     margin-bottom: 20px;
 }
-.audiocard {
-    width: 100%; /* Full width of the container */
-    max-width: 700px; /* Maximum width to prevent it from getting too large on large screens */
-    height: auto; /* Adjust height automatically based on content */
-    margin: 1rem auto; /* Top and bottom margin, centered in the container */
-}
-@media (max-width: 480px) {
-    .audiocard {
-        height: auto; /* Adjust height if necessary */
-        margin: 0.5rem auto; /* Smaller margins on very small devices */
-    }
-}
 
-@media (max-width: 768px) {
-    .audiocard {
-        width: 90%; /* Adjust the width for tablets and small screens */
-    }
-}
 
-@media (max-width: 480px) {
-    .audiocard {
-        width: 100%; /* Full width for mobile devices */
-        height: auto; /* Adjust height for mobile, if necessary */
-    }
-}
 
 .audiocard{
   
@@ -64,10 +41,13 @@ h1 {
     height: 50px;
     margin-bottom: 25px;
     margin-top: 15px;
+    border: none;
+    outline: none;
    
 }
 audio::-webkit-media-controls-current-time-display {
-    color: #fff;
+    color: #ece2e2;
+
   }
 audio::-webkit-media-controls-panel {
     background-color: #235252;
@@ -192,6 +172,16 @@ audio::-webkit-media-controls-panel {
     justify-content: center;
     margin-bottom: 5px; /* Adjust spacing */
     font-size: 20px;
+  
+}
+.border-3{
+  border: 3px solid #0b446959;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+text-transform: capitalize;
 }
 
 ::-webkit-scrollbar {
@@ -206,7 +196,7 @@ audio::-webkit-media-controls-panel {
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(197, 78, 9); 
+    background: rgb(53, 52, 131); 
     border-radius: 10px;
   }
   
@@ -336,4 +326,4 @@ audio::-webkit-media-controls-panel {
           background-position: right
       }
   }
- 
+

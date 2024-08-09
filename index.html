@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Music Player</title>
+    <title>Nigga</title>
     <link rel="stylesheet" href="style.css"><link href="https://unpkg.com/pattern.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
@@ -15,14 +15,16 @@
 
         <div class="player">
             <div class="now-playing">
+                <span class="border-3">
                 <div class="soundwave-container">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
-                  </div>    <span id="currentSongTitle"> </span>
+                  </div>    <span id="currentSongTitle"> playing </span>
+                </span>
             </div>
-            <audio  class="audiocard" id="audioPlayer" controls></audio>
+            <audio  class="audiocard" id="audioPlayer" pause controls></audio>
             <div class="controls">
                 <button onclick="prevSong()"> <i class="fas fa-backward"></i></button>
                 <button onclick="togglePlayPause()">Play/Pause</button>
